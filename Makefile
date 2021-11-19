@@ -1,0 +1,2 @@
+project:
+	@tuist generate
