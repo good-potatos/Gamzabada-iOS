@@ -2,10 +2,10 @@ import ProjectDescription
 
 extension Project {
     public static func app() -> Project {
-        let targets = makeAppTargets(name: "Servicename", dependencies: [])
-        let schemes = makeSchemes(name: "Servicename")
+        let targets = makeAppTargets(name: "Gamzabada", dependencies: [])
+        let schemes = makeSchemes(name: "Gamzabada")
 
-        return Project(name: "Servicename",
+        return Project(name: "Gamzabada",
                        organizationName: "nalongenter.com",
                        settings: .settings(configurations: [
                            .debug(name: "DEBUG", xcconfig: "Configurations/DEBUG.xcconfig"),
@@ -20,6 +20,7 @@ extension Project {
         dependencies: [TargetDependency]
     ) -> [Target] {
         let infoPlist: [String: InfoPlist.Value] = [
+            "CFBundleDisplayName": "$(DISPLAY_NAME)",
             "CFBundleShortVersionString": "1.0",
             "CFBundleVersion": "1",
             "UIMainStoryboardFile": "",
