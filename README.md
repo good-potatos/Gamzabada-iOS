@@ -1,4 +1,4 @@
-#감자바다 - iOS
+# 감자바다 - iOS
 
 ## Member
 - [김기현](https://github.com/kiryun)
