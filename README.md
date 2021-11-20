@@ -10,4 +10,4 @@
 - Cocoapods 1.10.1  
 
 ## Architecture
-Combine + MVVM
+- Combine + MVVM
