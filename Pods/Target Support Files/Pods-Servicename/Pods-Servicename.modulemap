@@ -1,6 +1,0 @@
-framework module Pods_Servicename {
-  umbrella header "Pods-Servicename-umbrella.h"
-
-  export *
-  module * { export * }
-}
