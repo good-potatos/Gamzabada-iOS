@@ -10,6 +10,8 @@ target 'Servicename' do
   target 'ServicenameTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Moya/Combine', '~> 15.0'
+    pod 'FLEX', :configurations => ['Debug']
   end
 
 end
