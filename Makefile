@@ -1,2 +1,3 @@
 project:
-	@tuist generate
+	@tuist generate --project-only
+	@pod install
