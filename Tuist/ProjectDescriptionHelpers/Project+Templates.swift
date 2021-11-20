@@ -1,32 +1,30 @@
 import ProjectDescription
 
 extension Project {
-    
     public static func app() -> Project {
         let targets = makeAppTargets(name: "Servicename", dependencies: [])
         let schemes = makeSchemes(name: "Servicename")
-        
-        
+
         return Project(name: "Servicename",
                        organizationName: "nalongenter.com",
                        settings: .settings(configurations: [
-                        .debug(name: "DEBUG", xcconfig: "Configurations/DEBUG.xcconfig"),
-                        .release(name: "RELEASE", xcconfig: "Configurations/RELEASE.xcconfig")
+                           .debug(name: "DEBUG", xcconfig: "Configurations/DEBUG.xcconfig"),
+                           .release(name: "RELEASE", xcconfig: "Configurations/RELEASE.xcconfig"),
                        ]),
                        targets: targets,
                        schemes: schemes)
     }
 
-
-    private static func makeAppTargets(name: String,
-                                       dependencies: [TargetDependency]) -> [Target] {
-        
+    private static func makeAppTargets(
+        name: String,
+        dependencies: [TargetDependency]
+    ) -> [Target] {
         let infoPlist: [String: InfoPlist.Value] = [
             "CFBundleShortVersionString": "1.0",
             "CFBundleVersion": "1",
             "UIMainStoryboardFile": "",
-            "UILaunchStoryboardName": "LaunchScreen"
-            ]
+            "UILaunchStoryboardName": "LaunchScreen",
+        ]
 
         let mainTarget = Target(
             name: name,
@@ -38,6 +36,7 @@ extension Project {
             sources: ["Targets/\(name)/Sources/**"],
             resources: ["Targets/\(name)/Resources/**",
                         "Targets/\(name)/Resources/Images.xcassets/**"],
+            scripts: makeScripts(),
             dependencies: dependencies
         )
 
@@ -50,11 +49,12 @@ extension Project {
             infoPlist: .default,
             sources: ["Targets/\(name)/Tests/**"],
             dependencies: [
-                .target(name: "\(name)")
-        ])
+                .target(name: "\(name)"),
+            ]
+        )
         return [mainTarget, testTarget]
     }
-    
+
     private static func makeSchemes(name: String) -> [Scheme] {
         return [
             Scheme(
@@ -74,8 +74,16 @@ extension Project {
                 archiveAction: .archiveAction(configuration: "RELEASE"),
                 profileAction: .profileAction(configuration: "RELEASE"),
                 analyzeAction: .analyzeAction(configuration: "RELEASE")
-                
-            )
+            ),
+        ]
+    }
+
+    private static func makeScripts() -> [TargetScript] {
+        return [
+            .pre(
+                script: "./Pods/SwiftFormat/CommandLineTool/swiftformat .",
+                name: "Run Script"
+            ),
         ]
     }
 }

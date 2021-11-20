@@ -1,0 +1,3 @@
+--exclude Pods
+--disable redundantSelf, andOperator, redundantFileprivate
+--wrapparameters before-first
