@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.4.4)
+  - FLEX (4.6.0)
+  - Moya/Combine (15.0.0):
+    - Moya/Core
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - SwiftFormat/CLI (0.48.16)
+
+DEPENDENCIES:
+  - FLEX
+  - Moya/Combine (~> 15.0)
+  - SwiftFormat/CLI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLEX
+    - Moya
+    - SwiftFormat
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  FLEX: 6223ad3d853fb6177a6ab1cda85f372a72768da8
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  SwiftFormat: b8a60419c4a8680f67faa80e2da710fd9dc85ca5
+
+PODFILE CHECKSUM: 61458804d56a3f4adf923bfea881f1db32a270c7
+
+COCOAPODS: 1.10.1
