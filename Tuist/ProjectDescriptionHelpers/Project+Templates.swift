@@ -37,6 +37,7 @@ extension Project {
             sources: ["Targets/\(name)/Sources/**"],
             resources: ["Targets/\(name)/Resources/**",
                         "Targets/\(name)/Resources/Images.xcassets/**"],
+            entitlements: "Gamzabada.entitlements",
             scripts: makeScripts(),
             dependencies: dependencies
         )
