@@ -6,7 +6,7 @@ extension Project {
         let schemes = makeSchemes(name: "Gamzabada")
 
         return Project(name: "Gamzabada",
-                       organizationName: "nalongenter.com",
+                       organizationName: "takeapotato.com",
                        settings: .settings(configurations: [
                            .debug(name: "DEBUG", xcconfig: "Configurations/DEBUG.xcconfig"),
                            .release(name: "RELEASE", xcconfig: "Configurations/RELEASE.xcconfig"),
@@ -31,10 +31,11 @@ extension Project {
             name: name,
             platform: .iOS,
             product: .app,
-            bundleId: "com.nalongenter.\(name)",
+            bundleId: "com.takeapotao.app.\(name)",
             deploymentTarget: .iOS(targetVersion: "15.0", devices: .iphone),
             infoPlist: .extendingDefault(with: infoPlist),
-            sources: ["Targets/\(name)/Sources/**"],
+            sources: ["Targets/\(name)/Sources/**",
+                      "Targets/\(name)/Sources/Domain/**"],
             resources: ["Targets/\(name)/Resources/**",
                         "Targets/\(name)/Resources/Images.xcassets/**"],
             entitlements: "Gamzabada.entitlements",
@@ -46,7 +47,7 @@ extension Project {
             name: "\(name)Tests",
             platform: .iOS,
             product: .unitTests,
-            bundleId: "com.nalongenter.\(name)Tests",
+            bundleId: "com.takeapotao.app.\(name)Tests",
             deploymentTarget: .iOS(targetVersion: "15.0", devices: .iphone),
             infoPlist: .default,
             sources: ["Targets/\(name)/Tests/**"],
