@@ -9,11 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var vm = LoginViewModel()
+
     var body: some View {
         #if DEBUG
             Text("Hello, DEBUG!")
         #else
-            Text("Hello, RELEASE")
+            Button {
+                self.vm.snsLogin()
+            } label: {
+                Text("sns login")
+            }
         #endif
     }
 }
