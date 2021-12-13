@@ -8,16 +8,8 @@
 
 import Moya
 
-enum GamzabadaApi: TargetType {}
+enum GamzabadaApi: BaseTargetType {}
 extension GamzabadaApi {
-    var baseURL: URL {
-        #if DEBUG
-            return URL(string: "https://api-test.takeapotato.com")!
-        #else
-            return URL(string: "https://api-beat.takeapotato.com")!
-        #endif
-    }
-
     var path: String {
         return ""
     }
@@ -26,11 +18,11 @@ extension GamzabadaApi {
         return .get
     }
 
-    var task: Task {
-        return .requestPlain
+    var headers: [String: String]? {
+        return nil
     }
 
-    var headers: [String: String]? {
+    var parameters: [String: Any]? {
         return nil
     }
 }
