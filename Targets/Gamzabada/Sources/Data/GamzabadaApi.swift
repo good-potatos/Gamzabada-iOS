@@ -8,9 +8,7 @@
 
 import Moya
 
-protocol Body: Encodable {}
-
-struct SnsLogin: Body {
+struct SnsLoginBody: Encodable {
     var accessToken: String
     var snsType: String
     var snsUserId: String
@@ -18,17 +16,17 @@ struct SnsLogin: Body {
 
 enum GamzabadaApi: TargetType {
     // https://api-test.takeapotato.com/swagger-ui/#/2.%20Posts
-    case snsLogin(Body) // SNS LOGIN
+    case snsLogin // SNS LOGIN
     case myInfo // 내 정보 조회
-    case registerAuth(Body) // 회원 등록(회원 가입)
+    case registerAuth // 회원 등록(회원 가입)
     case user(Int) // 회원 조회
     case userPosts(Int) // 회원 게시글 조회
     case searchAllPosts // 전체 게시글 조회
     case searchSinglePost(Int) // 게시글 단건 조회
     case deletePost(Int) // 게시글 삭제
-    case postLike(Int, Body) // 게시글 좋아요
+    case postLike(Int) // 게시글 좋아요
     case searchMyPosts // 나의 게시글 조회
-    case writePost(Body) // 새 게시글 작성
+    case writePost // 새 게시글 작성
 }
 
 extension GamzabadaApi {
@@ -58,7 +56,7 @@ extension GamzabadaApi {
             return "/v1/posts/\(postId)"
         case let .deletePost(postId):
             return "/v1/posts/\(postId)"
-        case let .postLike(postId, _):
+        case let .postLike(postId):
             return "/v1/posts/\(postId)"
         case .searchMyPosts:
             return "/v1/posts/me"
@@ -88,15 +86,11 @@ extension GamzabadaApi {
 
     var task: Task {
         switch self {
-        case let .snsLogin(body):
-            guard let body = body as? SnsLogin else {
-                // MARK: To Do
+        case .snsLogin:
+            let body = SnsLoginBody(accessToken: "string", snsType: "APPLE", snsUserId: "string")
+                .gamzaDictionaryConvert
 
-                // throw error
-                return .requestJSONEncodable(["": ""])
-            }
-
-            return .requestJSONEncodable(body.gamzaDictionaryConvert)
+            return .requestJSONEncodable(body)
 
         // MARK: To Do
 

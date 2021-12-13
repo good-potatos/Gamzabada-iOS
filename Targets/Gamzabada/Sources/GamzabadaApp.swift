@@ -12,7 +12,7 @@ import SwiftUI
 struct Gamzabadapp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

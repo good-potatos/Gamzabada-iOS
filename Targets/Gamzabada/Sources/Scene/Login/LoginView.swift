@@ -9,8 +9,14 @@
 import SwiftUI
 
 struct LoginView: View {
+    @ObservedObject var viewModel = LoginViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            self.viewModel.snsLogin()
+        } label: {
+            Text("sns login")
+        }
     }
 }
 
