@@ -92,6 +92,7 @@ extension GamzabadaApi {
 
             return .requestJSONEncodable(body)
 
+
         // MARK: To Do
 
         // api 관련 parameter/body 정의 필요
