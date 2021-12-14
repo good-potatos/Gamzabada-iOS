@@ -3,9 +3,9 @@
 
 target 'Gamzabada' do
   use_frameworks!
-  pod 'Moya/Combine', '~> 15.0'
-  pod 'FLEX', :configurations => ['Debug']
-  pod 'SwiftFormat/CLI'
+	pod 'Moya/Combine', '~> 15.0'
+	pod 'FLEX', :configurations => ['Debug']
+	pod 'SwiftFormat/CLI'
 
   target 'GamzabadaTests' do
     inherit! :search_paths
