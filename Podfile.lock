@@ -8,9 +8,9 @@ PODS:
   - SwiftFormat/CLI (0.48.16)
 
 DEPENDENCIES:
-  - FLEX
+  - FLEX (~> 4.6.0)
   - Moya/Combine (~> 15.0)
-  - SwiftFormat/CLI
+  - SwiftFormat/CLI (~> 0.48.16)
 
 SPEC REPOS:
   trunk:
@@ -25,6 +25,6 @@ SPEC CHECKSUMS:
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   SwiftFormat: b8a60419c4a8680f67faa80e2da710fd9dc85ca5
 
-PODFILE CHECKSUM: 61458804d56a3f4adf923bfea881f1db32a270c7
+PODFILE CHECKSUM: b59b7b2f6ee183642cd194767812f46fc1a1cd75
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

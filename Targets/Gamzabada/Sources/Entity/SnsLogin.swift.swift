@@ -9,6 +9,7 @@
 import Foundation
 
 // MARK: - Welcome
+
 struct SnsLogin: Codable {
     let data: SnsLoginData
     let message: String
@@ -16,6 +17,7 @@ struct SnsLogin: Codable {
 }
 
 // MARK: - DataClass
+
 struct SnsLoginData: Codable {
     let accessToken, expiredTime: String
     let snsType: String
@@ -23,6 +25,7 @@ struct SnsLoginData: Codable {
 }
 
 // MARK: - UserInfo
+
 struct UserInformation: Codable {
     let email: String
     let id: Int
