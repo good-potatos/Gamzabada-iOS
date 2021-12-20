@@ -15,6 +15,6 @@ protocol LoginRepository {
 
 class LoginRepositoryImpl: BaseRepository, LoginRepository {
     func fetchSnsLogin(body: SnsLoginBody) -> AnyPublisher<SnsLogin, NetworkError> {
-        return self.execut(api: .snsLogin(body: body))
+        return self.execute(api: .snsLogin(body: body))
     }
 }

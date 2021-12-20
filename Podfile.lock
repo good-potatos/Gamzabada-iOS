@@ -1,14 +1,28 @@
 PODS:
   - Alamofire (5.4.4)
-  - FLEX (4.6.0)
+  - FLEX (4.6.1)
+  - KakaoSDKAuth (2.8.4):
+    - KakaoSDKCommon (= 2.8.4)
+  - KakaoSDKCommon (2.8.4):
+    - KakaoSDKCommon/Common (= 2.8.4)
+    - KakaoSDKCommon/Network (= 2.8.4)
+  - KakaoSDKCommon/Common (2.8.4)
+  - KakaoSDKCommon/Network (2.8.4):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.8.4)
+  - KakaoSDKUser (2.8.4):
+    - KakaoSDKAuth (= 2.8.4)
   - Moya/Combine (15.0.0):
     - Moya/Core
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
-  - SwiftFormat/CLI (0.48.16)
+  - SwiftFormat/CLI (0.48.18)
 
 DEPENDENCIES:
   - FLEX (~> 4.6.0)
+  - KakaoSDKAuth
+  - KakaoSDKCommon
+  - KakaoSDKUser
   - Moya/Combine (~> 15.0)
   - SwiftFormat/CLI (~> 0.48.16)
 
@@ -16,15 +30,21 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - FLEX
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
     - Moya
     - SwiftFormat
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
-  FLEX: 6223ad3d853fb6177a6ab1cda85f372a72768da8
+  FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
+  KakaoSDKAuth: b9b693995f98b1821ccd22b39d383e1dede5ca45
+  KakaoSDKCommon: 33c9902ee9ce13e9d1cac3549896406229836ff5
+  KakaoSDKUser: d878977e0ba6b365cfeac3b6319cdf4231713bea
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  SwiftFormat: b8a60419c4a8680f67faa80e2da710fd9dc85ca5
+  SwiftFormat: 7dd2b33a0a3d61095b61c911b6d89ff962ae695c
 
-PODFILE CHECKSUM: b59b7b2f6ee183642cd194767812f46fc1a1cd75
+PODFILE CHECKSUM: f543b62c845b40f8531e624e258c73fc7bc3163a
 
 COCOAPODS: 1.10.1

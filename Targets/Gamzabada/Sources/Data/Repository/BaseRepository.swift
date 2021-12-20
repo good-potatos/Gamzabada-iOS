@@ -12,7 +12,7 @@ import Moya
 class BaseRepository {
     let provider = MoyaProvider<GamzabadaApi>()
 
-    func execut<T: Decodable>(api: GamzabadaApi) -> AnyPublisher<T, NetworkError> {
+    func execute<T: Decodable>(api: GamzabadaApi) -> AnyPublisher<T, NetworkError> {
         return self.provider
             .requestPublisher(api)
             .filterSuccessfulStatusCodes()

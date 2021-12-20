@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import KakaoSDKUser
+
+class LoginViewModel {
+    let usecase: LoginUsecase
+
+    init(usecase _: LoginUsecase) {
+        self.usecase = LoginUsecaseImpl()
+    }
+
+    func loginWithKakao() {
+        self.usecase.loginWithKakao()
+    }
+}
