@@ -1,0 +1,12 @@
+//
+//  RELEASE.xcconfig
+//  Config
+//
+//  Created by seokho on 2021/11/19.
+//
+
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) Release
+DISPLAY_NAME = 감자바다
+BUNDLE_IDENTITY = com.takeapotao.app.Gamzabada.Gamzabada
+
+
