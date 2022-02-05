@@ -6,25 +6,24 @@ import PackageDescription
 let package = Package(
     name: "Login",
     platforms: [
-        .iOS(.v15), .macOS(.v12),
+        .iOS(.v15), .macOS(.v12)
     ],
     products: [
         .library(
             name: "Login",
-            targets: ["Login"]
-        ),
+            targets: ["Login"]),
     ],
     dependencies: [
-        .package(name: "ProxyModule", path: "../ProxyModule"),
+        .package(name: "ProxyModule", path: "../ProxyModule")
     ],
     targets: [
         .target(
             name: "Login",
-            dependencies: []
-        ),
+            dependencies: [
+                .product(name: "ProxyModule", package: "ProxyModule")
+            ]),
         .testTarget(
             name: "LoginTests",
-            dependencies: ["Login"]
-        ),
+            dependencies: ["Login"]),
     ]
 )
