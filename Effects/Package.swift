@@ -16,10 +16,6 @@ let package = Package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             .upToNextMajor(from: "0.33.0")
         ),
-        .package(
-            url: "https://github.com/Moya/Moya.git",
-            .upToNextMajor(from: "15.0.0")
-        ),
         .package(name: "Entity", path: "../Entity")
     ],
     targets: [
@@ -27,7 +23,6 @@ let package = Package(
             name: "Effects",
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-                .product(name: "CombineMoya", package: "Moya"),
                 .product(name: "Entity", package: "Entity")
             ]),
         .testTarget(
