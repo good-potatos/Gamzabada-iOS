@@ -26,7 +26,7 @@ extension GamzabadaApi {
         }
     }
 
-    var queryParameter: [String: String]? {
+    var queryParameter: [String: Any]? {
         switch self {
         default:
             return nil

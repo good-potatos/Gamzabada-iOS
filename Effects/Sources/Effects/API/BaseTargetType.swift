@@ -9,7 +9,7 @@ import Foundation
 
 protocol BaseTargetType {
     var request: URLRequest { get }
-    var queryParameter: [String: String]? { get }
+    var queryParameter: [String: Any]? { get }
     var path: String { get }
     var requestBody: Data? { get }
 }
@@ -38,7 +38,10 @@ extension BaseTargetType {
         components.queryItems = []
 
         self.queryParameter?.forEach {
-            components.queryItems?.append(URLQueryItem(name: $0.key, value: $0.value))
+            components.queryItems?.append(URLQueryItem(
+                name: $0.key,
+                value: "\($0.value)"
+            ))
         }
 
         if let url = components.url {
