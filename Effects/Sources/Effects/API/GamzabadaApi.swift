@@ -39,8 +39,4 @@ extension GamzabadaApi {
             return body.data
         }
     }
-
-    var url: URL { UrlBuilder(object: self).url }
-
-    var request: URLRequest { UrlRequestBuilder(object: self).urlRequest }
 }
