@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  SnsLogin.swift
 //  
 //
 //  Created by Wimes on 2022/02/05.
@@ -17,19 +17,19 @@ public struct SnsLogin: Codable {
 // MARK: - DataClass
 
 public struct SnsLoginData: Codable {
-    let accessToken, expiredTime: String
-    let snsType: String
-    let userInfo: UserInformation
+    public let accessToken, expiredTime: String
+    public let snsType: String
+    public let userInfo: UserInformation
 }
 
 // MARK: - UserInfo
 
-struct UserInformation: Codable {
-    let email: String
-    let id: Int
-    let name, nickname: String
-    let postOnSaleCount, postSoldCount: Int
-    let profileImageURL: String
+public struct UserInformation: Codable {
+    public let email: String
+    public let id: Int
+    public let name, nickname: String
+    public let postOnSaleCount, postSoldCount: Int
+    public let profileImageURL: String
 
     enum CodingKeys: String, CodingKey {
         case email, id, name, nickname, postOnSaleCount, postSoldCount
