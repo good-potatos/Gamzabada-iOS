@@ -131,6 +131,7 @@
 				B94FEA252795BD4700C789CC /* Sources */,
 				B94FEA262795BD4700C789CC /* Frameworks */,
 				B94FEA272795BD4700C789CC /* Resources */,
+				B9CBC20827AFD13C009A8008 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -218,6 +219,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9CBC20827AFD13C009A8008 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "cd Effects\nSDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run -c release swiftformat \"$SRCROOT\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B94FEA252795BD4700C789CC /* Sources */ = {

@@ -6,20 +6,23 @@ import PackageDescription
 let package = Package(
     name: "GDS",
     platforms: [
-        .iOS(.v15), .macOS(.v12)
+        .iOS(.v15), .macOS(.v12),
     ],
     products: [
         .library(
             name: "GDS",
-            targets: ["GDS"]),
+            targets: ["GDS"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "GDS",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "GDSTests",
-            dependencies: ["GDS"]),
+            dependencies: ["GDS"]
+        ),
     ]
 )

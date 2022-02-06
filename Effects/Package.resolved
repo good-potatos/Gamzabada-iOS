@@ -56,6 +56,15 @@
         }
       },
       {
+        "package": "SwiftFormat",
+        "repositoryURL": "https://github.com/nicklockwood/SwiftFormat",
+        "state": {
+          "branch": null,
+          "revision": "637394feb9470cac534f3669c7c73745c6fdfaf0",
+          "version": "0.49.3"
+        }
+      },
+      {
         "package": "xctest-dynamic-overlay",
         "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
         "state": {

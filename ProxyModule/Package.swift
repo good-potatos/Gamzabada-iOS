@@ -6,27 +6,30 @@ import PackageDescription
 let package = Package(
     name: "ProxyModule",
     platforms: [
-        .iOS(.v15), .macOS(.v12)
+        .iOS(.v15), .macOS(.v12),
     ],
     products: [
         .library(
             name: "ProxyModule",
             type: .dynamic,
-            targets: ["ProxyModule"]),
+            targets: ["ProxyModule"]
+        ),
     ],
     dependencies: [
         .package(name: "Effects", path: "../Effects"),
-        .package(name: "GDS", path: "../GDS")
+        .package(name: "GDS", path: "../GDS"),
     ],
     targets: [
         .target(
             name: "ProxyModule",
             dependencies: [
                 .product(name: "Effects", package: "Effects"),
-                .product(name: "GDS", package: "GDS")
-            ]),
+                .product(name: "GDS", package: "GDS"),
+            ]
+        ),
         .testTarget(
             name: "ProxyModuleTests",
-            dependencies: ["ProxyModule"]),
+            dependencies: ["ProxyModule"]
+        ),
     ]
 )
