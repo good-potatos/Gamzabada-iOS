@@ -16,7 +16,12 @@ protocol BaseTargetType {
 
 extension BaseTargetType {
     var baseUrl: String {
-        return "api-test.takeapotato.com"
+        #if DEBUG
+            return "api-test.takeapotato.com"
+        #else
+            return "takeapotato.com"
+        #endif
+        
     }
 
     var header: [String: String] {
