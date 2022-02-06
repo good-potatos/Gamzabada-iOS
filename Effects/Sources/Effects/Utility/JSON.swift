@@ -7,9 +7,8 @@
 
 import Foundation
 
-// MARK: To-Do
+// MARK: api통신에 있어서 dictionary <-> data 간의 parsing을 위함.
 
-// Utility package로 따로 빼놓자
 struct JSON {
     static let encoder = JSONEncoder()
 }
