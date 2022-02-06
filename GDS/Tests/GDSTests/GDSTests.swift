@@ -1,5 +1,5 @@
-import XCTest
 @testable import GDS
+import XCTest
 
 final class GDSTests: XCTestCase {
     func testExample() throws {

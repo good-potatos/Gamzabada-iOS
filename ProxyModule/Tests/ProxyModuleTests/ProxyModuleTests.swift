@@ -1,5 +1,5 @@
-import XCTest
 @testable import ProxyModule
+import XCTest
 
 final class ProxyModuleTests: XCTestCase {
     func testExample() throws {

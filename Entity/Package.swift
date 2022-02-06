@@ -6,20 +6,23 @@ import PackageDescription
 let package = Package(
     name: "Entity",
     platforms: [
-        .iOS(.v15), .macOS(.v12)
+        .iOS(.v15), .macOS(.v12),
     ],
     products: [
         .library(
             name: "Entity",
-            targets: ["Entity"]),
+            targets: ["Entity"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "Entity",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "EntityTests",
-            dependencies: ["Entity"]),
+            dependencies: ["Entity"]
+        ),
     ]
 )
