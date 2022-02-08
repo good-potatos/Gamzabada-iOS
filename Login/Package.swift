@@ -20,7 +20,9 @@ let package = Package(
     targets: [
         .target(
             name: "Login",
-            dependencies: []
+            dependencies: [
+                .product(name: "ProxyModule", package: "ProxyModule"),
+            ]
         ),
         .testTarget(
             name: "LoginTests",
