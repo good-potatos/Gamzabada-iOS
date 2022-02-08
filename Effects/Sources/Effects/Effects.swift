@@ -2,12 +2,9 @@ import ComposableArchitecture
 import Entity
 
 public protocol Effects {
-    func fetchSnsLogin(body: SnsLoginBody)
+    func fetchSnsLogin(body: SnsLoginBody) -> Effect<SnsLogin, ApiError>
 }
 
-public class EffectsImpl: Effects {
-    public init() {}
-    public func fetchSnsLogin(body: SnsLoginBody) {
-        let api: GamzabadaApi = .snsLogin(body: body)
-    }
+public class EffectsImpl: BaseEffect, Effects {
+    override public init() {}
 }

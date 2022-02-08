@@ -1,33 +1,33 @@
 //
 //  BaseEffect.swift
-//  
+//
 //
 //  Created by Wimes on 2022/02/05.
 //
 
-import ComposableArchitecture
 import Combine
+import ComposableArchitecture
 
-public class BaseEffect{
+public class BaseEffect {
     let session = URLSession.shared
-    
-    public func execute<T: Decodable>(api: GamzabadaApi) -> Effect<T, ApiError>{
+
+    public func execute<T: Decodable>(api: GamzabadaApi) -> Effect<T, ApiError> {
         self.session
             .dataTaskPublisher(for: api.request)
-            .tryMap{ output -> Data in
-                guard let statusCode = (output.response as? HTTPURLResponse)?.statusCode else{
+            .tryMap { output -> Data in
+                guard let statusCode = (output.response as? HTTPURLResponse)?.statusCode else {
                     throw ApiError.unknown
                 }
-                
-                if statusCode >= 200 && statusCode < 300{
+
+                if statusCode >= 200 && statusCode < 300 {
                     return output.data
-                }else{
+                } else {
                     throw ApiError.badRequest(body: output.data.dictionary)
                 }
             }
             .decode(type: T.self, decoder: JSONDecoder())
-            .mapError{ error -> ApiError in
-                switch error{
+            .mapError { error -> ApiError in
+                switch error {
                 case is URLError:
                     return .network
                 case is DecodingError:

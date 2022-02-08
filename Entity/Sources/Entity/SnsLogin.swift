@@ -1,6 +1,6 @@
 //
 //  SnsLogin.swift
-//  
+//
 //
 //  Created by Wimes on 2022/02/05.
 //
@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Welcome
+
 public struct SnsLogin: Codable {
     public let data: SnsLoginData
     public let message: String
