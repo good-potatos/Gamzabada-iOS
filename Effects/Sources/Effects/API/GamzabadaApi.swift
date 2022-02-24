@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum GamzabadaApi: BaseTargetType {
+public enum GamzabadaApi: BaseTargetType {
     case snsLogin(body: SnsLoginBody)
 }
 

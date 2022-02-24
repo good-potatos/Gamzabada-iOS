@@ -12,6 +12,7 @@ protocol BaseTargetType {
     var queryParameter: [String: Any]? { get }
     var path: String { get }
     var requestBody: Data? { get }
+    var method: Method { get }
 }
 
 extension BaseTargetType {
@@ -54,6 +55,7 @@ extension BaseTargetType {
     var request: URLRequest {
         var request = URLRequest(url: self.url)
 
+        request.httpMethod = self.method.rawValue
         self.header.forEach {
             request.addValue($0.value, forHTTPHeaderField: $0.key)
         }
