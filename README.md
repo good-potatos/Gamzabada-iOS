@@ -6,9 +6,8 @@
 
 ## Requirements
 - iOS 15.0+  
-- Swift 5.5  
-- Xcode 13.1  
-- Cocoapods 1.10.1  
+- Swift 5.6  
+- Xcode 13.4.1  
 
 ## Architecture
-- Combine + MVVM
+- TCA
