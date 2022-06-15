@@ -8,7 +8,6 @@
 import XCTest
 
 class GamzabadaUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
