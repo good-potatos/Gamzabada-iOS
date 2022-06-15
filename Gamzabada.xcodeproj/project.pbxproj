@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9539467285A2E3F00E97072 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B9539466285A2E3F00E97072 /* Onboarding */; };
 		B9F6F532285A206C00E33563 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
 		B9F6F534285A206C00E33563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
 		B9F6F536285A206C00E33563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6F535285A206C00E33563 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9539464285A2E0B00E97072 /* Onboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Onboarding; sourceTree = "<group>"; };
 		B9F6F52E285A206C00E33563 /* Gamzabada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamzabada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F6F531285A206C00E33563 /* GamzabadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamzabadaApp.swift; sourceTree = "<group>"; };
 		B9F6F533285A206C00E33563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9539467285A2E3F00E97072 /* Onboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +74,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9539463285A2E0B00E97072 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B9539464285A2E0B00E97072 /* Onboarding */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B9539465285A2E3F00E97072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9F6F525285A206C00E33563 = {
 			isa = PBXGroup;
 			children = (
+				B9539463285A2E0B00E97072 /* Packages */,
 				B9F6F530285A206C00E33563 /* Gamzabada */,
 				B9F6F541285A206C00E33563 /* GamzabadaTests */,
 				B9F6F54B285A206C00E33563 /* GamzabadaUITests */,
 				B9F6F52F285A206C00E33563 /* Products */,
+				B9539465285A2E3F00E97072 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +164,9 @@
 			dependencies = (
 			);
 			name = Gamzabada;
+			packageProductDependencies = (
+				B9539466285A2E3F00E97072 /* Onboarding */,
+			);
 			productName = Gamzabada;
 			productReference = B9F6F52E285A206C00E33563 /* Gamzabada.app */;
 			productType = "com.apple.product-type.application";
@@ -604,6 +627,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9539466285A2E3F00E97072 /* Onboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Onboarding;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9F6F526285A206C00E33563 /* Project object */;
 }
