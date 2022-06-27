@@ -13,6 +13,7 @@
 		B953E9202869F18F00DAB554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
 		B953E9212869F1BF00DAB554 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
 		B953E9222869F1FF00DAB554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6F535285A206C00E33563 /* Assets.xcassets */; };
+		B9DD98E22869FD3F005B6F3A /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B9DD98E12869FD3F005B6F3A /* Onboarding */; };
 		B9F6F532285A206C00E33563 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
 		B9F6F534285A206C00E33563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
 		B9F6F536285A206C00E33563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6F535285A206C00E33563 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DD98E22869FD3F005B6F3A /* Onboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +229,9 @@
 			dependencies = (
 			);
 			name = "Gamzabada-DEV";
+			packageProductDependencies = (
+				B9DD98E12869FD3F005B6F3A /* Onboarding */,
+			);
 			productName = "Gamzabada-DEV";
 			productReference = B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */;
 			productType = "com.apple.product-type.application";
@@ -820,6 +825,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		B9539466285A2E3F00E97072 /* Onboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Onboarding;
+		};
+		B9DD98E12869FD3F005B6F3A /* Onboarding */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Onboarding;
 		};
