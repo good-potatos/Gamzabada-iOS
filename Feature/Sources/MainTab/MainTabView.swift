@@ -12,8 +12,16 @@ public struct MainTabView: View {
     let store: Store<MainTabState, MainTabAction>
 
     public var body: some View {
-        WithViewStore(self.store) { _ in
-            TabView {}
+        WithViewStore(self.store) { viewStore in
+            TabView {
+                ForEach(viewStore.state.items, id: \.self) { item in
+                    item.view
+                        .tabItem {
+                            item.icon
+                            item.title
+                        }
+                }
+            }
         }
     }
 }
