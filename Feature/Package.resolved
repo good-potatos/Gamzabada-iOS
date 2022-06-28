@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CombineCommunity/CombineExt.git",
       "state" : {
-        "revision" : "38a4d4cb01f8c7750671c786d33dfbea00cbd131",
-        "version" : "1.6.1"
+        "revision" : "581849239060948b626d1173eb0e5926818e7f8c",
+        "version" : "1.7.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture",
       "state" : {
-        "revision" : "db890996189ca27da9e56f4cc82a70057819429a",
-        "version" : "0.36.0"
+        "revision" : "b55977808fcc2ff75081b90f197f6e72a21214b4",
+        "version" : "0.38.1"
       }
     },
     {

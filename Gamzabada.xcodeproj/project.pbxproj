@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0447B287286B331A002A2AEA /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = 0447B286286B331A002A2AEA /* Feature */; };
 		B9539467285A2E3F00E97072 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B9539466285A2E3F00E97072 /* Onboarding */; };
 		B953E9202869F18F00DAB554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
 		B953E9212869F1BF00DAB554 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044D6135286B305800908B07 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
 		B9539464285A2E0B00E97072 /* Onboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Onboarding; sourceTree = "<group>"; };
 		B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamzabada-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B953E9162869EBCA00DAB554 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0447B287286B331A002A2AEA /* Feature in Frameworks */,
 				B9DD98E22869FD3F005B6F3A /* Onboarding in Frameworks */,
 				B9D72005286B2268007BCFE2 /* ProxyDebugModule in Frameworks */,
 			);
@@ -112,6 +115,7 @@
 			children = (
 				B9539464285A2E0B00E97072 /* Onboarding */,
 				B9D72003286B225A007BCFE2 /* ProxyDebugModule */,
+				044D6135286B305800908B07 /* Feature */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 			packageProductDependencies = (
 				B9DD98E12869FD3F005B6F3A /* Onboarding */,
 				B9D72004286B2268007BCFE2 /* ProxyDebugModule */,
+				0447B286286B331A002A2AEA /* Feature */,
 			);
 			productName = "Gamzabada-DEV";
 			productReference = B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */;
@@ -821,6 +826,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0447B286286B331A002A2AEA /* Feature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Feature;
+		};
 		B9539466285A2E3F00E97072 /* Onboarding */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Onboarding;
