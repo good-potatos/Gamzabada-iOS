@@ -8,18 +8,18 @@ let package = Package(
     platforms: [.iOS(.v15), .macOS(.v12)],
     products: [
         .library(
-            name: "Feature",
-            targets: ["Feature"]
+            name: "MainTab",
+            targets: ["MainTab"]
         ),
     ],
     dependencies: [
-        .package(path: "../Domain"),
+        .package(path: "../Domain")
     ],
     targets: [
         .target(
-            name: "Feature",
+            name: "MainTab",
             dependencies: [
-                .product(name: "Domain", package: "Domain"),
+                .product(name: "Domain", package: "Domain")
             ]
         ),
     ]

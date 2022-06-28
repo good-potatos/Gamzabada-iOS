@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0447B287286B331A002A2AEA /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = 0447B286286B331A002A2AEA /* Feature */; };
+		044D6138286B307700908B07 /* MainTab in Frameworks */ = {isa = PBXBuildFile; productRef = 044D6137286B307700908B07 /* MainTab */; };
 		B9539467285A2E3F00E97072 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B9539466285A2E3F00E97072 /* Onboarding */; };
 		B953E9202869F18F00DAB554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
 		B953E9212869F1BF00DAB554 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0447B287286B331A002A2AEA /* Feature in Frameworks */,
+				044D6138286B307700908B07 /* MainTab in Frameworks */,
 				B9DD98E22869FD3F005B6F3A /* Onboarding in Frameworks */,
 				B9D72005286B2268007BCFE2 /* ProxyDebugModule in Frameworks */,
 			);
@@ -216,7 +216,7 @@
 			packageProductDependencies = (
 				B9DD98E12869FD3F005B6F3A /* Onboarding */,
 				B9D72004286B2268007BCFE2 /* ProxyDebugModule */,
-				0447B286286B331A002A2AEA /* Feature */,
+				044D6137286B307700908B07 /* MainTab */,
 			);
 			productName = "Gamzabada-DEV";
 			productReference = B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */;
@@ -826,9 +826,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0447B286286B331A002A2AEA /* Feature */ = {
+		044D6137286B307700908B07 /* MainTab */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Feature;
+			productName = MainTab;
 		};
 		B9539466285A2E3F00E97072 /* Onboarding */ = {
 			isa = XCSwiftPackageProductDependency;
