@@ -7,4 +7,4 @@
 
 import Foundation
 
-public class GamzaUIKit {}
+public final class GamzaUIKit {}

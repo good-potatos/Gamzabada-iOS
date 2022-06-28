@@ -13,10 +13,6 @@ public extension GamzaUIKit {
 }
 
 public extension GamzaUIKit.Font {
-    static var size34: Font {
-        return FontSize.size34.font
-    }
-
     static var size32: Font {
         return FontSize.size32.font
     }
