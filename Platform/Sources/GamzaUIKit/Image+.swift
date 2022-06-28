@@ -23,6 +23,6 @@ public extension Image {
 }
 
 public enum ImageSource {
-    case image(name: String)
-    case url(url: String)
+    case image(String)
+    case url(String)
 }
