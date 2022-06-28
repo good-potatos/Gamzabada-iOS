@@ -18,6 +18,7 @@ let package = Package(
             .upToNextMajor(from: "0.36.0")
         ),
         .package(url: "https://github.com/CombineCommunity/CombineExt.git", from: "1.0.0"),
+        .package(url: "https://github.com/onevcat/Kingfisher", from: "7.2.0")
     ],
     targets: [
         .target(
@@ -25,6 +26,7 @@ let package = Package(
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 .product(name: "CombineExt", package: "CombineExt"),
+                .product(name: "Kingfisher", package: "Kingfisher")
             ]
         ),
         .testTarget(
