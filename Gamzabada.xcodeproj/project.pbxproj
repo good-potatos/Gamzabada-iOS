@@ -57,7 +57,6 @@
 
 /* Begin PBXFileReference section */
 		044D6135286B305800908B07 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
-		044D6136286B306E00908B07 /* Gamzabada-DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gamzabada-DEV-Info.plist"; sourceTree = "<group>"; };
 		B9539464285A2E0B00E97072 /* Onboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Onboarding; sourceTree = "<group>"; };
 		B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamzabada-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B953E9162869EBCA00DAB554 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
@@ -140,7 +139,6 @@
 		B9F6F525285A206C00E33563 = {
 			isa = PBXGroup;
 			children = (
-				044D6136286B306E00908B07 /* Gamzabada-DEV-Info.plist */,
 				B9539463285A2E0B00E97072 /* Packages */,
 				B9F6F530285A206C00E33563 /* Gamzabada */,
 				B9F6F541285A206C00E33563 /* GamzabadaTests */,
