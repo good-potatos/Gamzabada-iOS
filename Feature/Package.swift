@@ -13,13 +13,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../Domain")
+        .package(path: "../Domain"),
     ],
     targets: [
         .target(
             name: "MainTab",
             dependencies: [
-                .product(name: "Domain", package: "Domain")
+                .product(name: "Domain", package: "Domain"),
             ]
         ),
     ]
