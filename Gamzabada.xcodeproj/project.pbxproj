@@ -7,7 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044D6138286B307700908B07 /* MainTab in Frameworks */ = {isa = PBXBuildFile; productRef = 044D6137286B307700908B07 /* MainTab */; };
+		0447B28B286C9324002A2AEA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447B28A286C9324002A2AEA /* RootView.swift */; };
+		0447B28E286C9353002A2AEA /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447B28D286C9353002A2AEA /* RootState.swift */; };
+		0462E9BF286DE8DC001C5E20 /* MainTabInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 0462E9BE286DE8DC001C5E20 /* MainTabInterface */; };
+		0462E9C1286DE8E6001C5E20 /* MainTab in Frameworks */ = {isa = PBXBuildFile; productRef = 0462E9C0286DE8E6001C5E20 /* MainTab */; };
+		0462E9C3286DE8F0001C5E20 /* MainTab in Frameworks */ = {isa = PBXBuildFile; productRef = 0462E9C2286DE8F0001C5E20 /* MainTab */; };
+		0462E9C5286DE8F0001C5E20 /* MainTabInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 0462E9C4286DE8F0001C5E20 /* MainTabInterface */; };
+		0462E9C9286DF2AB001C5E20 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9C8286DF2AB001C5E20 /* DummyView.swift */; };
+		0462E9CA286DF41A001C5E20 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447B28A286C9324002A2AEA /* RootView.swift */; };
+		0462E9CB286DF41D001C5E20 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447B28D286C9353002A2AEA /* RootState.swift */; };
+		0462E9CC286DF420001C5E20 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9C8286DF2AB001C5E20 /* DummyView.swift */; };
+		0462E9CE286F1CEA001C5E20 /* RootAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9CD286F1CEA001C5E20 /* RootAction.swift */; };
+		0462E9D0286F1CF6001C5E20 /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9CF286F1CF6001C5E20 /* RootReducer.swift */; };
+		0462E9D2286F1D03001C5E20 /* RootEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9D1286F1D03001C5E20 /* RootEnvironment.swift */; };
+		0462E9D3286F1D51001C5E20 /* RootAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9CD286F1CEA001C5E20 /* RootAction.swift */; };
+		0462E9D4286F1D53001C5E20 /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9CF286F1CF6001C5E20 /* RootReducer.swift */; };
+		0462E9D5286F1D56001C5E20 /* RootEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9D1286F1D03001C5E20 /* RootEnvironment.swift */; };
+		0462E9D7286F1F3F001C5E20 /* DummyView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9D6286F1F3F001C5E20 /* DummyView2.swift */; };
+		0462E9D8286F1F68001C5E20 /* DummyView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462E9D6286F1F3F001C5E20 /* DummyView2.swift */; };
+		B9539467285A2E3F00E97072 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B9539466285A2E3F00E97072 /* Onboarding */; };
 		B953E9202869F18F00DAB554 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
 		B953E9212869F1BF00DAB554 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
 		B953E9222869F1FF00DAB554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6F535285A206C00E33563 /* Assets.xcassets */; };
@@ -56,6 +74,15 @@
 
 /* Begin PBXFileReference section */
 		044D6135286B305800908B07 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
+		0447B28A286C9324002A2AEA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0447B28D286C9353002A2AEA /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		0462E9BD286DE897001C5E20 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
+		0462E9C8286DF2AB001C5E20 /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
+		0462E9CD286F1CEA001C5E20 /* RootAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAction.swift; sourceTree = "<group>"; };
+		0462E9CF286F1CF6001C5E20 /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
+		0462E9D1286F1D03001C5E20 /* RootEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootEnvironment.swift; sourceTree = "<group>"; };
+		0462E9D6286F1F3F001C5E20 /* DummyView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView2.swift; sourceTree = "<group>"; };
+		B9539464285A2E0B00E97072 /* Onboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Onboarding; sourceTree = "<group>"; };
 		B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamzabada-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B953E9162869EBCA00DAB554 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		B953E9172869EBE400DAB554 /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
@@ -77,8 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044D6138286B307700908B07 /* MainTab in Frameworks */,
-				B99C176D28707D6000D7CA42 /* Onboarding in Frameworks */,
+				B9DD98E22869FD3F005B6F3A /* Onboarding in Frameworks */,
+				0462E9BF286DE8DC001C5E20 /* MainTabInterface in Frameworks */,
+				0462E9C1286DE8E6001C5E20 /* MainTab in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B99C176B28707D5D00D7CA42 /* Onboarding in Frameworks */,
+				B9539467285A2E3F00E97072 /* Onboarding in Frameworks */,
+				0462E9C5286DE8F0001C5E20 /* MainTabInterface in Frameworks */,
+				0462E9C3286DE8F0001C5E20 /* MainTab in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,11 +137,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0447B28C286C9344002A2AEA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0447B28A286C9324002A2AEA /* RootView.swift */,
+				0447B28D286C9353002A2AEA /* RootState.swift */,
+				0462E9CD286F1CEA001C5E20 /* RootAction.swift */,
+				0462E9CF286F1CF6001C5E20 /* RootReducer.swift */,
+				0462E9D1286F1D03001C5E20 /* RootEnvironment.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		B9539463285A2E0B00E97072 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				044D6135286B305800908B07 /* Feature */,
-				B99C176928707D5600D7CA42 /* Onboarding */,
+				B9539464285A2E0B00E97072 /* Onboarding */,
+				0462E9BD286DE897001C5E20 /* Feature */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -158,8 +200,11 @@
 		B9F6F530285A206C00E33563 /* Gamzabada */ = {
 			isa = PBXGroup;
 			children = (
+				0447B28C286C9344002A2AEA /* Root */,
 				B953E9152869EBBF00DAB554 /* xcconfig */,
 				B9F6F531285A206C00E33563 /* GamzabadaApp.swift */,
+				0462E9C8286DF2AB001C5E20 /* DummyView.swift */,
+				0462E9D6286F1F3F001C5E20 /* DummyView2.swift */,
 				B9F6F533285A206C00E33563 /* ContentView.swift */,
 				B9F6F535285A206C00E33563 /* Assets.xcassets */,
 				B9F6F537285A206C00E33563 /* Preview Content */,
@@ -210,8 +255,9 @@
 			);
 			name = "Gamzabada-DEV";
 			packageProductDependencies = (
-				044D6137286B307700908B07 /* MainTab */,
-				B99C176C28707D6000D7CA42 /* Onboarding */,
+				B9DD98E12869FD3F005B6F3A /* Onboarding */,
+				0462E9BE286DE8DC001C5E20 /* MainTabInterface */,
+				0462E9C0286DE8E6001C5E20 /* MainTab */,
 			);
 			productName = "Gamzabada-DEV";
 			productReference = B953E9072869EBB300DAB554 /* Gamzabada-DEV.app */;
@@ -232,7 +278,9 @@
 			);
 			name = Gamzabada;
 			packageProductDependencies = (
-				B99C176A28707D5D00D7CA42 /* Onboarding */,
+				B9539466285A2E3F00E97072 /* Onboarding */,
+				0462E9C2286DE8F0001C5E20 /* MainTab */,
+				0462E9C4286DE8F0001C5E20 /* MainTabInterface */,
 			);
 			productName = Gamzabada;
 			productReference = B9F6F52E285A206C00E33563 /* Gamzabada.app */;
@@ -401,8 +449,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0462E9CC286DF420001C5E20 /* DummyView.swift in Sources */,
+				0462E9D5286F1D56001C5E20 /* RootEnvironment.swift in Sources */,
+				0462E9D3286F1D51001C5E20 /* RootAction.swift in Sources */,
 				B953E9212869F1BF00DAB554 /* GamzabadaApp.swift in Sources */,
 				B953E9202869F18F00DAB554 /* ContentView.swift in Sources */,
+				0462E9D8286F1F68001C5E20 /* DummyView2.swift in Sources */,
+				0462E9CA286DF41A001C5E20 /* RootView.swift in Sources */,
+				0462E9CB286DF41D001C5E20 /* RootState.swift in Sources */,
+				0462E9D4286F1D53001C5E20 /* RootReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +465,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0462E9C9286DF2AB001C5E20 /* DummyView.swift in Sources */,
+				0462E9D2286F1D03001C5E20 /* RootEnvironment.swift in Sources */,
+				0462E9CE286F1CEA001C5E20 /* RootAction.swift in Sources */,
 				B9F6F534285A206C00E33563 /* ContentView.swift in Sources */,
 				B9F6F532285A206C00E33563 /* GamzabadaApp.swift in Sources */,
+				0462E9D7286F1F3F001C5E20 /* DummyView2.swift in Sources */,
+				0447B28E286C9353002A2AEA /* RootState.swift in Sources */,
+				0447B28B286C9324002A2AEA /* RootView.swift in Sources */,
+				0462E9D0286F1CF6001C5E20 /* RootReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,11 +884,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		044D6137286B307700908B07 /* MainTab */ = {
+		0462E9BE286DE8DC001C5E20 /* MainTabInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainTabInterface;
+		};
+		0462E9C0286DE8E6001C5E20 /* MainTab */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MainTab;
 		};
-		B99C176A28707D5D00D7CA42 /* Onboarding */ = {
+		0462E9C2286DE8F0001C5E20 /* MainTab */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainTab;
+		};
+		0462E9C4286DE8F0001C5E20 /* MainTabInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainTabInterface;
+		};
+		B9539466285A2E3F00E97072 /* Onboarding */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Onboarding;
 		};

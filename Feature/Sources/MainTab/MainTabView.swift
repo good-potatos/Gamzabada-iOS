@@ -6,10 +6,15 @@
 //
 
 import ComposableArchitecture
+import MainTabInterface
 import SwiftUI
 
 public struct MainTabView: View {
     let store: Store<MainTabState, MainTabAction>
+
+    public init(store: Store<MainTabState, MainTabAction>) {
+        self.store = store
+    }
 
     public var body: some View {
         WithViewStore(self.store) { viewStore in

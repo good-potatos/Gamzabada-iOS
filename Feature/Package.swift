@@ -11,6 +11,10 @@ let package = Package(
             name: "MainTab",
             targets: ["MainTab"]
         ),
+        .library(
+            name: "MainTabInterface",
+            targets: ["MainTabInterface"]
+        ),
     ],
     dependencies: [
         .package(path: "../Domain"),
@@ -19,6 +23,12 @@ let package = Package(
     targets: [
         .target(
             name: "MainTab",
+            dependencies: [
+                "MainTabInterface",
+            ]
+        ),
+        .target(
+            name: "MainTabInterface",
             dependencies: [
                 .product(name: "Domain", package: "Domain"),
                 .product(name: "GamzaUIKit", package: "GamzaUIKit"),
