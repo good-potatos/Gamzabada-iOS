@@ -6,7 +6,6 @@
 //
 
 import ComposableArchitecture
-import MainTabInterface
 import SwiftUI
 
 public struct TabItem: Hashable {
@@ -40,12 +39,10 @@ public struct MainTabState: Equatable {
             title: Text
         )]
     ) {
-        items.forEach { view, icon, title in
-            self.items.append(TabItem(
-                view: view,
-                icon: icon,
-                title: title
-            ))
-        }
+        self.items = items.map { TabItem(
+            view: $0.view,
+            icon: $0.icon,
+            title: $0.title
+        ) }
     }
 }

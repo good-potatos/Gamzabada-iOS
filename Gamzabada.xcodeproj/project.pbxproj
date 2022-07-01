@@ -200,8 +200,8 @@
 		B9F6F530285A206C00E33563 /* Gamzabada */ = {
 			isa = PBXGroup;
 			children = (
-				0447B28C286C9344002A2AEA /* Root */,
 				B953E9152869EBBF00DAB554 /* xcconfig */,
+				0447B28C286C9344002A2AEA /* Root */,
 				B9F6F531285A206C00E33563 /* GamzabadaApp.swift */,
 				0462E9C8286DF2AB001C5E20 /* DummyView.swift */,
 				0462E9D6286F1F3F001C5E20 /* DummyView2.swift */,
