@@ -13,11 +13,6 @@ let package = Package(
         ),
 
         .library(
-            name: "GamzaUIKit",
-            targets: ["GamzaUIKit"]
-        ),
-
-        .library(
             name: "Network",
             targets: ["Network"]
         ),
@@ -33,13 +28,6 @@ let package = Package(
     targets: [
         .target(
             name: "GamzaFoundation",
-            dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
-            ]
-        ),
-
-        .target(
-            name: "GamzaUIKit",
             dependencies: [
                 .product(name: "ProxyModule", package: "ProxyModule"),
             ]
