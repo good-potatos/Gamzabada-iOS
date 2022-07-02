@@ -36,7 +36,7 @@ public struct CellSummaryView: View {
                 Text("시작가격 " + self.price.priceFormat)
                     .foregroundColor(GamzaUIKit.Color.pointColor)
                     .font(GamzaUIKit.Font.size14)
-                Text(self.remainingTime.countDownString)
+                Text(self.remainingTime.countDownString + " 남음")
                     .foregroundColor(self.remainingTimeColor)
                     .font(GamzaUIKit.Font.size12)
             }

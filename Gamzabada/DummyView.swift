@@ -14,7 +14,7 @@ struct DummyView: View {
 
     var body: some View {
         CellSummaryView(
-            title: "Hello World",
+            title: "MyProduct",
             price: "1000000",
             remainingTime: self.$dummyViewModel.date,
             remainingTimeColor: self.$dummyViewModel.color
