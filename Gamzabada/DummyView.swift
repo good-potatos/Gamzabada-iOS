@@ -5,11 +5,20 @@
 //  Created by Wimes on 2022/07/01.
 //
 
+import GamzaUIKit
 import SwiftUI
 
 struct DummyView: View {
+    @ObservedObject
+    var dummyViewModel = DummyViewModel()
+
     var body: some View {
-        Text("Hello Gamza")
+        ProductSummaryView(
+            title: "MyProduct",
+            price: "1000000",
+            remainingTime: self.$dummyViewModel.date,
+            remainingTimeColor: self.$dummyViewModel.color
+        )
     }
 }
 

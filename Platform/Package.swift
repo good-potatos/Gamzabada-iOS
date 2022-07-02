@@ -42,6 +42,7 @@ let package = Package(
             name: "GamzaUIKit",
             dependencies: [
                 .product(name: "ProxyModule", package: "ProxyModule"),
+                "GamzaFoundation",
             ]
         ),
 
