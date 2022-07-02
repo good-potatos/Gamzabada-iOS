@@ -8,7 +8,7 @@
 import GamzaFoundation
 import SwiftUI
 
-public struct CellSummaryView: View {
+public struct ProductSummaryView: View {
     private let title: String
     private let price: String
     @Binding
@@ -32,13 +32,13 @@ public struct CellSummaryView: View {
         VStack(alignment: .leading) {
             Group {
                 Text(self.title)
-                    .font(GamzaUIKit.Font.size16)
+                    .font(GamzaUIKit.Font.size16.weight(.regular))
                 Text("시작가격 " + self.price.priceFormat)
                     .foregroundColor(GamzaUIKit.Color.pointColor)
-                    .font(GamzaUIKit.Font.size14)
+                    .font(GamzaUIKit.Font.size14.weight(.bold))
                 Text(self.remainingTime.countDownString + " 남음")
                     .foregroundColor(self.remainingTimeColor)
-                    .font(GamzaUIKit.Font.size12)
+                    .font(GamzaUIKit.Font.size12.weight(.medium))
             }
             .scaledToFit()
             .minimumScaleFactor(0.5)

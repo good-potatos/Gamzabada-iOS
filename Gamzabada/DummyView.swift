@@ -13,7 +13,7 @@ struct DummyView: View {
     var dummyViewModel = DummyViewModel()
 
     var body: some View {
-        CellSummaryView(
+        ProductSummaryView(
             title: "MyProduct",
             price: "1000000",
             remainingTime: self.$dummyViewModel.date,
