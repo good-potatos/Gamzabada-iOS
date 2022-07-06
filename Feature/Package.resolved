@@ -19,21 +19,21 @@
       }
     },
     {
-      "identity" : "gamzafoundation-ios",
+      "identity" : "gamzafoundation",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/good-potatos/GamzaFoundation-iOS",
+      "location" : "https://github.com/good-potatos/GamzaFoundation",
       "state" : {
-        "revision" : "86a380e343a17cb71e215265d4e3d5434add1024",
-        "version" : "1.0.0"
+        "revision" : "71725061e22dc3f58d86cb44c48abecc16a4c99a",
+        "version" : "1.0.1"
       }
     },
     {
-      "identity" : "gamzauikit-ios",
+      "identity" : "gamzauikit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/good-potatos/GamzaUIKit-iOS",
+      "location" : "https://github.com/good-potatos/GamzaUIKit",
       "state" : {
-        "revision" : "dffe5d8cdd5d0788531f8a1cff930b1f9693e9a5",
-        "version" : "1.0.8"
+        "revision" : "76deecccf4d2915be2a0dd93ca03a1f82c259baa",
+        "version" : "1.0.9"
       }
     },
     {
