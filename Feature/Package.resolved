@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/good-potatos/GamzaUIKit",
       "state" : {
-        "revision" : "76deecccf4d2915be2a0dd93ca03a1f82c259baa",
-        "version" : "1.0.9"
+        "revision" : "80d57b97fc7b5b28f695805971c787dbc8c7deda",
+        "version" : "1.0.10"
       }
     },
     {
