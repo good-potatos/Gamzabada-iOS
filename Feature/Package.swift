@@ -14,14 +14,14 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../Domain"),
-        .package(url: "https://github.com/good-potatos/GamzaUIKit-iOS", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/good-potatos/GamzaUIKit", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         .target(
             name: "MainTab",
             dependencies: [
                 .product(name: "Domain", package: "Domain"),
-                .product(name: "GamzaUIKit-iOS", package: "GamzaUIKit-iOS"),
+                .product(name: "GamzaUIKit", package: "GamzaUIKit"),
             ]
         ),
     ]

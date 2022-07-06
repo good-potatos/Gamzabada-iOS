@@ -19,14 +19,14 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../ProxyModule"),
-        .package(url: "https://github.com/good-potatos/GamzaFoundation-iOS", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/good-potatos/GamzaFoundation", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         .target(
             name: "Network",
             dependencies: [
                 .product(name: "ProxyModule", package: "ProxyModule"),
-                .product(name: "GamzaFoundation-iOS", package: "GamzaFoundation-iOS"),
+                .product(name: "GamzaFoundation", package: "GamzaFoundation"),
             ]
         ),
 
