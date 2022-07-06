@@ -19,6 +19,33 @@
       }
     },
     {
+      "identity" : "gamzafoundation-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/good-potatos/GamzaFoundation-iOS",
+      "state" : {
+        "revision" : "86a380e343a17cb71e215265d4e3d5434add1024",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "gamzauikit-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/good-potatos/GamzaUIKit-iOS",
+      "state" : {
+        "revision" : "dffe5d8cdd5d0788531f8a1cff930b1f9693e9a5",
+        "version" : "1.0.8"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "022e4eeb79f817748544b318b991d9a70036bbf8",
+        "version" : "7.2.4"
+      }
+    },
+    {
       "identity" : "swift-case-paths",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-case-paths",
