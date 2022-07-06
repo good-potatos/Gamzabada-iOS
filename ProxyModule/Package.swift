@@ -19,7 +19,6 @@ let package = Package(
         ),
         .package(url: "https://github.com/CombineCommunity/CombineExt.git", from: "1.0.0"),
         .package(url: "https://github.com/onevcat/Kingfisher", from: "7.2.0"),
-        .package(url: "https://github.com/good-potatos/GamzabadaUIKit-iOS", .upToNextMajor(from: "1.0.2")),
     ],
     targets: [
         .target(
@@ -28,7 +27,6 @@ let package = Package(
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 .product(name: "CombineExt", package: "CombineExt"),
                 .product(name: "Kingfisher", package: "Kingfisher"),
-                .product(name: "GamzabadaUIKit-iOS", package: "GamzabadaUIKit-iOS"),
             ]
         ),
         .testTarget(

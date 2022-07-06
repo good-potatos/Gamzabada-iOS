@@ -20,7 +20,6 @@ let package = Package(
             name: "Domain",
             dependencies: [
                 .product(name: "Network", package: "Platform"),
-                .product(name: "GamzaFoundation", package: "Platform"),
                 .product(name: "PropertyWrappers", package: "Platform"),
             ]
         ),

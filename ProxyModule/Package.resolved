@@ -19,15 +19,6 @@
       }
     },
     {
-      "identity" : "gamzabadauikit-ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/good-potatos/GamzabadaUIKit-iOS",
-      "state" : {
-        "revision" : "d26c1001451cf2430f88b87ad167de0fb121c3a3",
-        "version" : "1.0.2"
-      }
-    },
-    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher",

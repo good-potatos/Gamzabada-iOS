@@ -19,12 +19,21 @@
       }
     },
     {
-      "identity" : "flex",
+      "identity" : "gamzafoundation-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/FLEXTool/FLEX.git",
+      "location" : "https://github.com/good-potatos/GamzaFoundation-iOS",
       "state" : {
-        "revision" : "ac50a6d36b738a15a6d3b6b51683d8a152319f59",
-        "version" : "4.7.0"
+        "revision" : "86a380e343a17cb71e215265d4e3d5434add1024",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "022e4eeb79f817748544b318b991d9a70036bbf8",
+        "version" : "7.2.4"
       }
     },
     {
@@ -70,15 +79,6 @@
       "state" : {
         "revision" : "2d6b7ffcc67afd9077fac5e5a29bcd6d39b71076",
         "version" : "0.4.0"
-      }
-    },
-    {
-      "identity" : "swiftybeaver",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
-      "state" : {
-        "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
-        "version" : "1.9.6"
       }
     },
     {
