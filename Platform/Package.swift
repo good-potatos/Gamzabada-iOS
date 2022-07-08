@@ -8,16 +8,6 @@ let package = Package(
     platforms: [.iOS(.v15), .macOS(.v12)],
     products: [
         .library(
-            name: "GamzaFoundation",
-            targets: ["GamzaFoundation"]
-        ),
-
-        .library(
-            name: "GamzaUIKit",
-            targets: ["GamzaUIKit"]
-        ),
-
-        .library(
             name: "Network",
             targets: ["Network"]
         ),
@@ -29,26 +19,14 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../ProxyModule"),
+        .package(url: "https://github.com/good-potatos/GamzaFoundation", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
-        .target(
-            name: "GamzaFoundation",
-            dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
-            ]
-        ),
-
-        .target(
-            name: "GamzaUIKit",
-            dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
-            ]
-        ),
-
         .target(
             name: "Network",
             dependencies: [
                 .product(name: "ProxyModule", package: "ProxyModule"),
+                .product(name: "GamzaFoundation", package: "GamzaFoundation"),
             ]
         ),
 

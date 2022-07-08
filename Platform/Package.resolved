@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "gamzafoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/good-potatos/GamzaFoundation",
+      "state" : {
+        "revision" : "71725061e22dc3f58d86cb44c48abecc16a4c99a",
+        "version" : "1.0.1"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher",

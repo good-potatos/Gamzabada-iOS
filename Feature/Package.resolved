@@ -19,6 +19,33 @@
       }
     },
     {
+      "identity" : "gamzafoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/good-potatos/GamzaFoundation",
+      "state" : {
+        "revision" : "71725061e22dc3f58d86cb44c48abecc16a4c99a",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "gamzauikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/good-potatos/GamzaUIKit",
+      "state" : {
+        "revision" : "80d57b97fc7b5b28f695805971c787dbc8c7deda",
+        "version" : "1.0.10"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "022e4eeb79f817748544b318b991d9a70036bbf8",
+        "version" : "7.2.4"
+      }
+    },
+    {
       "identity" : "swift-case-paths",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-case-paths",
