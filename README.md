@@ -9,14 +9,6 @@
 - Swift 5.6  
 - Xcode 13.4.1  
 
-## Dependency
-- TCA 0.38.1
-- CombineExt 1.7.0
-- Kingfisher 7.2.4
-- SwiftFormat 0.49.11
-- SwiftyBeaver 1.9.6
-- FLEX 4.7.0
-
 ## Architecture
 
 using TCA
