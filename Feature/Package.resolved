@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/combine-schedulers",
       "state" : {
-        "revision" : "4cf088c29a20f52be0f2ca54992b492c54e0076b",
-        "version" : "0.5.3"
+        "revision" : "0ba3a562716efabb585ccb169450c5389107286b",
+        "version" : "0.6.0"
       }
     },
     {
@@ -19,12 +19,21 @@
       }
     },
     {
+      "identity" : "flex",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FLEXTool/FLEX.git",
+      "state" : {
+        "revision" : "ac50a6d36b738a15a6d3b6b51683d8a152319f59",
+        "version" : "4.7.0"
+      }
+    },
+    {
       "identity" : "gamzafoundation",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/good-potatos/GamzaFoundation",
       "state" : {
-        "revision" : "71725061e22dc3f58d86cb44c48abecc16a4c99a",
-        "version" : "1.0.1"
+        "branch" : "feature/architecture",
+        "revision" : "83d9a14a1bf9c12f7b0611fc1c0a51c1a146c9bb"
       }
     },
     {
@@ -41,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher",
       "state" : {
-        "revision" : "022e4eeb79f817748544b318b991d9a70036bbf8",
-        "version" : "7.2.4"
+        "revision" : "2235a22ca249199cb736237f4bb9cc12b6ed416a",
+        "version" : "7.3.0"
       }
     },
     {
@@ -68,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture",
       "state" : {
-        "revision" : "b55977808fcc2ff75081b90f197f6e72a21214b4",
-        "version" : "0.38.1"
+        "revision" : "d0ba4b87358a11d5be26d125ef3d3d492a07d8cf",
+        "version" : "0.38.2"
       }
     },
     {
@@ -91,12 +100,21 @@
       }
     },
     {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "state" : {
+        "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
+        "version" : "1.9.6"
+      }
+    },
+    {
       "identity" : "xctest-dynamic-overlay",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
       "state" : {
-        "revision" : "50a70a9d3583fe228ce672e8923010c8df2deddd",
-        "version" : "0.2.1"
+        "revision" : "ef8e14e7ce1c0c304c644c6ba365d06c468ded6b",
+        "version" : "0.3.3"
       }
     }
   ],

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import GamzaFoundation
+import ComposableArchitecture
 
 struct ContentView: View {
     var body: some View {

@@ -18,14 +18,14 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../ProxyModule"),
-        .package(url: "https://github.com/good-potatos/GamzaFoundation", .upToNextMajor(from: "1.0.0")),
+//        .package(url: "https://github.com/good-potatos/GamzaFoundation", .upToNextMajor(from: "1.0.0")),
+        // MARK: TODO: 현재 master branch에는 관련 dependency가 없어서 sub branch를 이용. master merge 이후에 변경 필요
+        .package(url: "https://github.com/good-potatos/GamzaFoundation", .branch("feature/architecture")),
     ],
     targets: [
         .target(
             name: "Network",
             dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
                 .product(name: "GamzaFoundation", package: "GamzaFoundation"),
             ]
         ),
@@ -33,7 +33,7 @@ let package = Package(
         .target(
             name: "PropertyWrappers",
             dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
+                .product(name: "GamzaFoundation", package: "GamzaFoundation"),
             ]
         ),
     ]
