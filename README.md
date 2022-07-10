@@ -1,7 +1,7 @@
 # 감자바다 - iOS
 
 ## Member
-- [김기현](https://github.com/kiryun)
+- [김기현](https://github.com/dev-wimes)
 - [한석호](https://github.com/dp21125)
 
 ## Requirements
@@ -10,4 +10,14 @@
 - Xcode 13.4.1  
 
 ## Architecture
-- TCA
+
+using TCA
+
+### Module Architecture
+
+![image-20220710194958730](README.assets/image-20220710194958730.png)
+
+### Feature Architecture concept
+
+![image-20220702190348471](README.assets/image-20220702190348471.png)
+
