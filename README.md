@@ -15,7 +15,7 @@ using TCA
 
 ### Module Architecture
 
-![image-20220702185410258](README.assets/image-20220702185410258.png)
+![image-20220710194958730](README.assets/image-20220710194958730.png)
 
 ### Feature Architecture concept
 
