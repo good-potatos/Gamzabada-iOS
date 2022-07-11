@@ -13,7 +13,6 @@
 		B953E9222869F1FF00DAB554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6F535285A206C00E33563 /* Assets.xcassets */; };
 		B99C176B28707D5D00D7CA42 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B99C176A28707D5D00D7CA42 /* Onboarding */; };
 		B99C176D28707D6000D7CA42 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = B99C176C28707D6000D7CA42 /* Onboarding */; };
-		B9D72005286B2268007BCFE2 /* ProxyDebugModule in Frameworks */ = {isa = PBXBuildFile; productRef = B9D72004286B2268007BCFE2 /* ProxyDebugModule */; };
 		B9D72007286B22D4007BCFE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6F538285A206C00E33563 /* Preview Assets.xcassets */; };
 		B9F6F532285A206C00E33563 /* GamzabadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F531285A206C00E33563 /* GamzabadaApp.swift */; };
 		B9F6F534285A206C00E33563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6F533285A206C00E33563 /* ContentView.swift */; };
@@ -61,7 +60,6 @@
 		B953E9162869EBCA00DAB554 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
 		B953E9172869EBE400DAB554 /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
 		B99C176928707D5600D7CA42 /* Onboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Onboarding; sourceTree = "<group>"; };
-		B9D72003286B225A007BCFE2 /* ProxyDebugModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ProxyDebugModule; sourceTree = "<group>"; };
 		B9F6F52E285A206C00E33563 /* Gamzabada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamzabada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F6F531285A206C00E33563 /* GamzabadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamzabadaApp.swift; sourceTree = "<group>"; };
 		B9F6F533285A206C00E33563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				044D6138286B307700908B07 /* MainTab in Frameworks */,
-				B9D72005286B2268007BCFE2 /* ProxyDebugModule in Frameworks */,
 				B99C176D28707D6000D7CA42 /* Onboarding in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +110,6 @@
 		B9539463285A2E0B00E97072 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				B9D72003286B225A007BCFE2 /* ProxyDebugModule */,
 				044D6135286B305800908B07 /* Feature */,
 				B99C176928707D5600D7CA42 /* Onboarding */,
 			);
@@ -214,7 +210,6 @@
 			);
 			name = "Gamzabada-DEV";
 			packageProductDependencies = (
-				B9D72004286B2268007BCFE2 /* ProxyDebugModule */,
 				044D6137286B307700908B07 /* MainTab */,
 				B99C176C28707D6000D7CA42 /* Onboarding */,
 			);
@@ -379,7 +374,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ProxyDebugModule\nSDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run -c release swiftformat \"$SRCROOT\"\n";
+			shellScript = "
+";
 		};
 		B9F6F55B285A267E00E33563 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -837,10 +833,6 @@
 		B99C176C28707D6000D7CA42 /* Onboarding */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Onboarding;
-		};
-		B9D72004286B2268007BCFE2 /* ProxyDebugModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ProxyDebugModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

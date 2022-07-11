@@ -18,14 +18,12 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../ProxyModule"),
-        .package(url: "https://github.com/good-potatos/GamzaFoundation", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/good-potatos/GamzaFoundation", .upToNextMajor(from: "1.1.0")),
     ],
     targets: [
         .target(
             name: "Network",
             dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
                 .product(name: "GamzaFoundation", package: "GamzaFoundation"),
             ]
         ),
@@ -33,7 +31,7 @@ let package = Package(
         .target(
             name: "PropertyWrappers",
             dependencies: [
-                .product(name: "ProxyModule", package: "ProxyModule"),
+                .product(name: "GamzaFoundation", package: "GamzaFoundation"),
             ]
         ),
     ]
